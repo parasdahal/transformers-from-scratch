@@ -492,7 +492,7 @@ There is one Q, K and V vector for each sequence element, which are used to comp
 **Value**: The value vector represents the actual content of the token. It is used as a part of the weighted sum to compute each output vector.
 
 $$
-\operatorname{Attention}(Q, K, V)=\operatorname{softmax}\left(\frac{Q K^T}{\sqrt{d_k}}\right) V
+A(Q, K, V)=\operatorname{softmax}\left(\frac{Q K^T}{\sqrt{d_k}}\right) V
 $$
 
 By attention weighting the tokens, we can generate abstract concepts starting from word embeddings.
