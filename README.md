@@ -12,6 +12,17 @@ Transformers are one of the most powerful deep learning models we have today. Th
 
 In this notebook, we will build up these key insights from the ground-up, from tokenization to multi-head-attention, and eventually assemble different Transformer architecures (BERT, GPT) and finally train a GPT-2 like language model.
 
+## Table of Contents
+
+1. [Byte Pair Encoding (BPE) - Creating a vocabulary and tokenizing text to numbers](#1-byte-pair-encoding-bpe---creating-a-vocabulary-and-tokenizing-text-to-numbers)
+2. [Positional Encoding - Incorporating the order of words](#2-positional-encoding---incorporating-the-order-of-words)
+3. [Self Attention - Enabling model to learn relationship between tokens](#3-self-attention---enabling-model-to-learn-relationship-between-tokens)
+4. [Transformer Block - Putting together the key ideas](#4-transformer-block---putting-together-the-key-ideas)
+5. [Transformer Architectures - Learning models with different objectives and behaviours](#5-transformer-architectures---learning-models-with-different-objectives-and-behaviours)
+6. [Transformer Training - Language Modeling with GPT](#6-transformer-training---language-modeling)
+
+---
+
 ## 1. Byte Pair Encoding (BPE) - Creating a vocabulary and tokenizing text to numbers
 
 The first problem of having machines understand text input is to convert human language into machine-friendly format i.e. numbers. We could collect all the words we can find and assign them an integer (as was geneally done in classical NLP), but it has following problems:
